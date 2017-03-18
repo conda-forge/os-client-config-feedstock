@@ -1,7 +1,7 @@
 {%set name = "os-client-config" %}
-{%set version = "1.18.0" %}
+{%set version = "1.26.0" %}
 {%set hash_type = "sha256" %}
-{%set hash_val = "69f51888730a0e7b860dec2723c5119c7e7aaf60f4935d2c8062f8f812238be0" %}
+{%set hash_val = "77cb506da9fa5e5dc53b1b8b5dca7c5d7816dea91783518e31bbdd98aa87ece9" %}
 
 package:
   name: {{ name }}
