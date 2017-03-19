@@ -1,7 +1,7 @@
 About os-client-config
 ======================
 
-Home: https://github.com/openstack/os-client-config
+Home: https://docs.openstack.org/developer/os-client-config/
 
 Package license: Apache 2.0
 
