@@ -1,19 +1,21 @@
 {%set name = "os-client-config" %}
 {%set version = "1.26.0" %}
+{%set compress_type = "tar.gz" %}
 {%set hash_type = "sha256" %}
 {%set hash_val = "77cb506da9fa5e5dc53b1b8b5dca7c5d7816dea91783518e31bbdd98aa87ece9" %}
+{%set build_num = "0" %}
 
 package:
   name: {{ name }}
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.tar.gz
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  fn: {{ name }}-{{ version }}.{{ compress_type }}
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.{{ compress_type }}
   {{ hash_type }}: {{ hash_val }}
 
 build:
-  number: 0
+  number: {{ build_num }}
   script: python setup.py install --single-version-externally-managed --record=record.txt
 
 requirements:
@@ -35,9 +37,13 @@ test:
     - os_client_config.tests
 
 about:
-  home: https://github.com/openstack/os-client-config
+  home: https://docs.openstack.org/developer/os-client-config/
+  license_file: LICENSE
   license: Apache 2.0
+  license_family: Apache
   summary: 'OpenStack Client Configuation Library'
+  dev_url: https://git.openstack.org/cgit/openstack/os-client-config
+  doc_url: https://docs.openstack.org/developer/os-client-config/
 
 extra:
   recipe-maintainers:
