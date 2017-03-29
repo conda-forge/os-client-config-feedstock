@@ -11,6 +11,18 @@ Summary: OpenStack Client Configuation Library
 
 
 
+Current build status
+====================
+
+Linux: [![Circle CI](https://circleci.com/gh/conda-forge/os-client-config-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/os-client-config-feedstock)
+OSX: [![TravisCI](https://travis-ci.org/conda-forge/os-client-config-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/os-client-config-feedstock)
+Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/os-client-config-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/os-client-config-feedstock/branch/master)
+
+Current release info
+====================
+Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/os-client-config/badges/version.svg)](https://anaconda.org/conda-forge/os-client-config)
+Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/os-client-config/badges/downloads.svg)](https://anaconda.org/conda-forge/os-client-config)
+
 Installing os-client-config
 ===========================
 
@@ -31,7 +43,6 @@ It is possible to list all of the versions of `os-client-config` available on yo
 ```
 conda search os-client-config --channel conda-forge
 ```
-
 
 
 About conda-forge
@@ -67,18 +78,6 @@ Terminology
 
 **conda-forge** - the place where the feedstock and smithy live and work to
                   produce the finished article (built conda distributions)
-
-Current build status
-====================
-
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/os-client-config-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/os-client-config-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/os-client-config-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/os-client-config-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/os-client-config-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/os-client-config-feedstock/branch/master)
-
-Current release info
-====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/os-client-config/badges/version.svg)](https://anaconda.org/conda-forge/os-client-config)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/os-client-config/badges/downloads.svg)](https://anaconda.org/conda-forge/os-client-config)
 
 
 Updating os-client-config-feedstock
