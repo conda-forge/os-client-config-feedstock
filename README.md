@@ -14,9 +14,9 @@ Summary: OpenStack Client Configuation Library
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/tmpf75rap4d-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/tmpf75rap4d-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/tmpf75rap4d-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/tmpf75rap4d-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/tmpf75rap4d-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/tmpf75rap4d-feedstock/branch/master)
+Linux: [![Circle CI](https://circleci.com/gh/conda-forge/os-client-config-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/os-client-config-feedstock)
+OSX: [![TravisCI](https://travis-ci.org/conda-forge/os-client-config-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/os-client-config-feedstock)
+Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/os-client-config-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/os-client-config-feedstock/branch/master)
 
 Current release info
 ====================
