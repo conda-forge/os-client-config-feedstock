@@ -1,8 +1,8 @@
 {%set name = "os-client-config" %}
-{%set version = "1.26.0" %}
+{%set version = "1.28.0" %}
 {%set compress_type = "tar.gz" %}
 {%set hash_type = "sha256" %}
-{%set hash_val = "77cb506da9fa5e5dc53b1b8b5dca7c5d7816dea91783518e31bbdd98aa87ece9" %}
+{%set hash_val = "e5be9cfa7a57fe838255236fe4956a91ccb461548883c7b01b37b7b4081af8b8" %}
 {%set build_num = "0" %}
 
 package:
