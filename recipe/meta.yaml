@@ -1,8 +1,8 @@
 {% set name = "os-client-config" %}
-{% set version = "1.28.0" %}
+{% set version = "1.29.0" %}
 {% set bundle = "tar.gz" %}
 {% set hash_type = "sha256" %}
-{% set hash = "e5be9cfa7a57fe838255236fe4956a91ccb461548883c7b01b37b7b4081af8b8" %}
+{% set hash = "e98bdde50e30396d47d237cfb23e209e8c0a6f834ada190a2dcfe5305bd42af0" %}
 {% set build = 0 %}
 
 package:
@@ -15,7 +15,7 @@ source:
   {{ hash_type }}: {{ hash }}
 
 build:
-  number: {{ build }}
+  number: 0
   script: python setup.py install --single-version-externally-managed --record=record.txt
 
 requirements:
