@@ -1,35 +1,28 @@
 {% set name = "os-client-config" %}
-{% set version = "1.29.0" %}
-{% set bundle = "tar.gz" %}
-{% set hash_type = "sha256" %}
-{% set hash = "e98bdde50e30396d47d237cfb23e209e8c0a6f834ada190a2dcfe5305bd42af0" %}
+{% set version = "2.1.0" %}
 
 package:
   name: {{ name }}
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.{{ bundle }}
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.{{ bundle }}
-  {{ hash_type }}: {{ hash }}
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: abc38a351f8c006d34f7ee5f3f648de5e3ecf6455cc5d76cfd889d291cdf3f4e
 
 build:
   noarch: python
   number: 0
-  script: python -m pip install --no-deps --ignore-installed .
+  script: {{ PYTHON }} -m pip install --no-deps --ignore-installed .
 
 requirements:
   build:
-    - python
+    - python >=3.6
     - pip
     - pbr >=2.0.0
 
   run:
-    - python
-    - pyyaml >=3.10.0
-    - appdirs >=1.3.0
-    - keystoneauth1 >=3.3.0
-    - requestsexceptions >=1.2.0
+    - python >=3.6
+    - openstacksdk
 
 test:
   imports:
@@ -39,9 +32,9 @@ test:
 about:
   home: https://docs.openstack.org/developer/os-client-config/
   license_file: LICENSE
-  license: Apache 2.0
+  license: Apache-2.0
   license_family: Apache
-  summary: 'OpenStack Client Configuation Library'
+  summary: 'OpenStack Client Configuration Library'
   dev_url: https://git.openstack.org/cgit/openstack/os-client-config
   doc_url: https://docs.openstack.org/developer/os-client-config/
 
