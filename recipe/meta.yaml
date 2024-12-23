@@ -11,20 +11,22 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install --no-deps --ignore-installed .
 
 requirements:
-  build:
-    - python >=3.6
+  host:
+    - python {{ python_min }}
     - pip
     - pbr >=2.0.0
 
   run:
-    - python >=3.6
+    - python >={{ python_min }}
     - openstacksdk
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - os_client_config
     - os_client_config.tests
