@@ -19,6 +19,7 @@ requirements:
     - python {{ python_min }}
     - pip
     - pbr >=2.0.0
+    - setuptools
 
   run:
     - python >={{ python_min }}
